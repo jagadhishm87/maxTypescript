@@ -5,6 +5,7 @@ import {createStackNavigator, createAppContainer} from 'react-navigation';
 import { Startup } from './src/components/pages/startup';
 import {FBLoginButton} from './src/components/pages/fbloginbutton';
 import {BarcodeScanner} from './src/components/pages/barcodescanner';
+import {VoiceNative} from './src/components/pages/voice-recorder';
 
 export  class App extends Component {
  
@@ -23,7 +24,8 @@ const AppNavigator = createStackNavigator({
   Login: {screen: Login},
   Startup: {screen: Startup},
   FBLoginButton:{screen:FBLoginButton},
-  BarcodeScanner:{screen:BarcodeScanner}
+  BarcodeScanner:{screen:BarcodeScanner},
+  VoiceNative: {screen: VoiceNative}
 });
 
 createAppContainer(AppNavigator);

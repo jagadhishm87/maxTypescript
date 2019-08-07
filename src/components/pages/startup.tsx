@@ -59,9 +59,16 @@ export class Startup extends Component {
 
         <Container>
           <Button
-            label="Open Camera"
+            label="Read Barcode"
             styles={{ button: styles.primaryButton, label: styles.buttonWhiteText }}
             onPress={() => navigate('BarcodeScanner')} />
+        </Container>
+
+        <Container>
+          <Button
+            label="Speak"
+            styles={{ button: styles.primaryButton, label: styles.buttonWhiteText }}
+            onPress={() => navigate('VoiceNative')} />
         </Container>
       </ScrollView>
     );
